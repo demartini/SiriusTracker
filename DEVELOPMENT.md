@@ -20,7 +20,7 @@ Jump to:
 
 **Node JS** Go to the [Node.js Downloads page](https://nodejs.org/en/download/). Download Node.js for MacOS (`v12.13.0` or above recommended). Run the downloaded Node.js `.pkg` Installer. You're finished! To ensure Node.js has been installed, run `node -v` in your terminal - you should get something like `v12.13.0` or above **if** [**NPM**](https://www.npmjs.com/get-npm) **and** [**node-gyp**](https://github.com/nodejs/node-gyp#installation) **don't come bundled with your Node.js installation, Download manually**.
 
-Now you are ready for next step: [Get SiriusTracker Code](#get-sirius-tracker-electron-code).
+Now you are ready for next step: [Get SiriusTracker Code](#get-siriustracker-code).
 
 ## Ubuntu/Debian
 
@@ -30,7 +30,7 @@ If you’re in a hurry, you can copy and paste the following into your terminal:
 $ sudo apt install git nodejs node-gyp python build-essential snapcraft libxext-dev libxtst-dev lib xkbfile-dev libgconf-2-4
 ```
 
-after pasting you can jump to next step [Get SiriusTracker Code](#get-sirius-tracker-electron-code).
+after pasting you can jump to next step [Get SiriusTracker Code](#get-siriustracker-code).
 
 **For a step-by-step explanation, read on.**
 
@@ -72,7 +72,7 @@ $ sudo apt install libxext-dev libxtst-dev libxkbfile-dev libgconf-2-4
 
 **if** [**NPM**](https://www.npmjs.com/get-npm) **don't come bundled with your Node.js installation, Download manually**.
 
-Now you are ready for next step: [Get SiriusTracker Code](#get-sirius-tracker-electron-code).
+Now you are ready for next step: [Get SiriusTracker Code](#get-siriustracker-code).
 
 ## Windows
 
@@ -99,13 +99,13 @@ You can download chocolatey from here https://chocolatey.org and for Installing 
 
 **if** [**NPM**](https://www.npmjs.com/get-npm) **don't come bundled with your Node.js installation, Download manually**.
 
-Now you are ready for next step: [Get SiriusTracker Code](#get-sirius-tracker-electron-code).
+Now you are ready for next step: [Get SiriusTracker Code](#get-siriustracker-code).
 
 # Get SiriusTracker Code
 
 1. In your browser, visit https://github.com/demartini/SiriusTracker and click the `fork` button. You will need to be logged in to GitHub to do this.
 2. Open Terminal (macOS/Ubuntu) or Git BASH (Windows; must **run as an Administrator**).
-3. In Terminal/Git BASH, [clone your fork of the SiriusTracker repository](#clone-to-your-machine) and [connect the SiriusTracker upstream repository](#connect-your-fork-to-sirius-tracker-upstream).
+3. In Terminal/Git BASH, [clone your fork of the SiriusTracker repository](#clone-to-your-machine) and [connect the SiriusTracker upstream repository](#connect-your-fork-to-siriustracker-upstream).
 
 ## Clone to your machine
 
