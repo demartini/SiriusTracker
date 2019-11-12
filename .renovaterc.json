@@ -1,0 +1,24 @@
+{
+  "automerge": true,
+  "extends": [
+    "config:base"
+  ],
+  "labels": [
+    "renovate",
+    "dependencies"
+  ],
+  "major": {
+    "automerge": false
+  },
+  "pin": {
+    "automerge": true
+  },
+  "vulnerabilityAlerts": {
+    "labels": [
+      "security"
+    ],
+    "assignees": [
+      "@demartini"
+    ]
+  }
+}

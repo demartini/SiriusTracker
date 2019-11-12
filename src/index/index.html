@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>SiriusTracker</title>
+
+    <!-- Stylesheets -->
+    <link href="../assets/css/fonts.css" rel="stylesheet" />
+    <link href="../../node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" />
+    <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/css/main.css" rel="stylesheet" />
+  </head>
+  <body class="index">
+    <div class="wrapper d-flex align-items-center justify-content-center h-100">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="header shadow-sm mb-3 p-3 bg-white rounded">
+              <img class="img-fluid d-block mx-auto mb-3" src="../assets/images/logo.png" alt="Logo" />
+              <h4 class="mb-2 btc">&nbsp;</h4>
+              <h5 class="mb-3 usd">&nbsp;</h5>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="box shadow-sm mb-3 p-3 bg-white rounded">
+              <h5 class="title">Market Cap (<i class="fab fa-btc" aria-hidden="true"></i>)</h5>
+              <h4 class="price btc-market-cap">&nbsp;</h4>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="box shadow-sm mb-3 p-3 bg-white rounded">
+              <h5 class="title">Market Cap (<i class="fas fa-dollar-sign" aria-hidden="true"></i>)</h5>
+              <h4 class="price usd-market-cap">&nbsp;</h4>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="box shadow-sm mb-3 p-3 bg-white rounded">
+              <h5 class="title">Volume (24h) (<i class="fab fa-btc" aria-hidden="true"></i>)</h5>
+              <h4 class="price btc-24h-vol">&nbsp;</h4>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="box shadow-sm mb-3 p-3 bg-white rounded">
+              <h5 class="title">Volume (24h) (<i class="fas fa-dollar-sign" aria-hidden="true"></i>)</h5>
+              <h4 class="price usd-24h-vol">&nbsp;</h4>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="box shadow-sm mb-3 p-3 bg-white rounded">
+              <h5 class="title">Change (24h) (<i class="fab fa-btc" aria-hidden="true"></i>)</h5>
+              <h4 class="price btc-24h-change">&nbsp;</h4>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="box shadow-sm mb-3 p-3 bg-white rounded">
+              <h5 class="title">Change (24h) (<i class="fas fa-dollar-sign" aria-hidden="true"></i>)</h5>
+              <h4 class="price usd-24h-change">&nbsp;</h4>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="footer shadow-sm p-3 bg-white rounded">
+              <div class="btn-group d-flex" role="group">
+                <button class="btn btn-sm btn-outline-sirius refresh-action">
+                  <i class="fas fa-sync refresh-action" aria-hidden="true"></i>
+                </button>
+                <button class="btn btn-sm btn-outline-sirius quit-action">
+                  <i class="far fa-times-circle quit-action" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+      let $ = require('jquery')
+      require('popper.js')
+      require('bootstrap')
+      require('./index')
+    </script>
+  </body>
+</html>

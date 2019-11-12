@@ -1,0 +1,386 @@
+/*
+  Theme Name: SiriusTracker
+  Author: Iolar Demartini Jr
+  Author URI: https://www.iolardemartini.com/
+  Description: Theme for SiriusTracker
+  Version: 1.0
+*/
+
+/******************************************************************************
+  Selection Color
+*******************************************************************************/
+::selection {
+  background-color: #657b99;
+  color: #fff;
+  text-shadow: none;
+}
+
+::-webkit-selection {
+  background-color: #657b99;
+  color: #fff;
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background-color: #657b99;
+  color: #fff;
+  text-shadow: none;
+}
+
+/******************************************************************************
+  Reset
+*******************************************************************************/
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+main,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+/******************************************************************************
+  HTML5 display-role reset for older browsers
+*******************************************************************************/
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::after,
+blockquote::before,
+q::after,
+q::before {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/******************************************************************************
+	Links
+*******************************************************************************/
+a {
+  color: #657b99;
+  font-weight: 700;
+}
+
+a:active,
+a:focus,
+a:hover {
+  color: rgba(101, 123, 153, 0.7);
+  outline: none;
+  text-decoration: none;
+}
+
+/******************************************************************************
+	Basic Styles
+*******************************************************************************/
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #f7f7f7;
+  color: #3d4756;
+  font-family: 'Roboto Mono', monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+  text-align: center;
+  -ms-text-size-adjust: 100%;
+}
+
+/******************************************************************************
+	App
+*******************************************************************************/
+.wrapper {
+  padding: 1rem 0;
+}
+
+.btc {
+  font-size: 18px;
+}
+
+.usd {
+  font-size: 16px;
+}
+
+.title {
+  font-size: 12px;
+}
+
+.price {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/******************************************************************************
+	Buttons
+*******************************************************************************/
+.btn-outline-sirius {
+  border-color: #657b99;
+  color: #657b99;
+}
+
+.btn-outline-sirius:hover {
+  background-color: #657b99;
+  border-color: #657b99;
+  color: #fff;
+}
+
+.btn-outline-sirius:focus,
+.btn-outline-sirius.focus {
+  box-shadow: 0 0 0 0.2rem rgba(101, 123, 153, 0.5);
+}
+
+.btn-outline-sirius.disabled,
+.btn-outline-sirius:disabled {
+  background-color: transparent;
+  color: #657b99;
+}
+
+.btn-outline-sirius:not(:disabled):not(.disabled):active,
+.btn-outline-sirius:not(:disabled):not(.disabled).active,
+.show > .btn-outline-sirius.dropdown-toggle {
+  background-color: #657b99;
+  border-color: #657b99;
+  color: #fff;
+}
+
+.btn-outline-sirius:not(:disabled):not(.disabled):active:focus,
+.btn-outline-sirius:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-sirius.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(101, 123, 153, 0.5);
+}
+
+.btn-outline-inverse-sirius {
+  background-color: #657b99;
+  border-color: #657b99;
+  color: #fff;
+}
+
+.btn-outline-inverse-sirius:hover {
+  background-color: transparent;
+  border-color: #657b99;
+  color: #657b99;
+}
+
+.btn-outline-inverse-sirius:focus,
+.btn-outline-inverse-sirius.focus {
+  box-shadow: 0 0 0 0.2rem rgba(101, 123, 153, 0.5);
+}
+
+.btn-outline-inverse-sirius.disabled,
+.btn-outline-inverse-sirius:disabled {
+  background-color: #657b99;
+  color: #fff;
+}
+
+.btn-outline-inverse-sirius:not(:disabled):not(.disabled):active,
+.btn-outline-inverse-sirius:not(:disabled):not(.disabled).active,
+.show > .btn-outline-inverse-sirius.dropdown-toggle {
+  background-color: transparent;
+  border-color: #657b99;
+  color: #657b99;
+}
+
+.btn-outline-inverse-sirius:not(:disabled):not(.disabled):active:focus,
+.btn-outline-inverse-sirius:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-inverse-sirius.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(101, 123, 153, 0.5);
+}
+
+/******************************************************************************
+  Forms
+*******************************************************************************/
+.form-control,
+textarea.form-control,
+.custom-select {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #3d4756;
+  height: 50px;
+  padding-left: 22px;
+  -webkit-transition: all 0.15s;
+  -o-transition: all 0.15s;
+  transition: all 0.15s;
+}
+
+.form-control::-moz-placeholder,
+.custom-select::-moz-placeholder {
+  color: #9f9f9f;
+  opacity: 1;
+}
+
+.form-control::-webkit-input-placeholder,
+.custom-select::-webkit-input-placeholder {
+  color: #9f9f9f;
+}
+
+.form-control:-ms-input-placeholder,
+.custom-select:-ms-input-placeholder {
+  color: #9f9f9f;
+}
+
+.form-control:focus,
+.custom-select:focus {
+  border-color: #657b99;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: 0;
+}
+
+textarea.form-control {
+  height: 120px;
+  padding-top: 14px;
+  resize: none;
+}
+
+.input-group-text {
+  background-color: #657b99;
+  border: 1px solid #657b99;
+  color: #fff;
+}
+
+/******************************************************************************
+	Tables
+*******************************************************************************/
+.table > thead > tr > th:nth-child(-n + 2) {
+  width: 40%;
+}
+
+.table > thead > tr > th:last-child {
+  width: 20%;
+}
+
+.table > thead > tr > td,
+.table > tbody > tr > td {
+  vertical-align: middle;
+}
+
+/******************************************************************************
+	Preferences
+*******************************************************************************/
+.index {
+  text-align: center;
+}
+
+/******************************************************************************
+	Preferences
+*******************************************************************************/
+.preferences {
+  text-align: left;
+}
+
+/******************************************************************************
+	Notifications
+*******************************************************************************/
+.notifications {
+  text-align: left;
+}

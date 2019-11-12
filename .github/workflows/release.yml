@@ -1,0 +1,44 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - v*
+
+jobs:
+  publish:
+    name: Build on ${{matrix.os}}
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macOS-latest, windows-latest]
+
+    steps:
+      - name: Context
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: echo "$GITHUB_CONTEXT"
+      - uses: actions/checkout@master
+      - name: Use Node.js 13.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 13.x
+      - name: Install dependencies
+        run: |
+          npm install
+      - name: Install Linux packages
+        if: matrix.os == 'ubuntu-latest'
+        env:
+          SNAPCRAFT_LOGIN_FILE: ${{ secrets.SNAPCRAFT_LOGIN_FILE }}
+        run: |
+          sudo apt update
+          sudo snap install snapcraft --classic
+          echo "$SNAPCRAFT_LOGIN_FILE" > snapcraft.txt && snapcraft login --with snapcraft.txt
+      - name: Build release
+        run: |
+          npm ci
+          npm run release
+        env:
+          CI: true
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

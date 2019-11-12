@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Preferences</title>
+
+    <!-- Stylesheets -->
+    <link href="../assets/css/fonts.css" rel="stylesheet" />
+    <link href="../../node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" />
+    <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/css/main.css" rel="stylesheet" />
+  </head>
+  <body class="preferences">
+    <div class="wrapper d-flex align-items-center justify-content-center h-100">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="header shadow-sm mb-3 p-3 bg-white rounded">
+              <img class="img-fluid d-block mx-auto" src="../assets/images/logo.png" alt="Logo" />
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="shadow-sm mb-3 p-3 bg-white rounded">
+              <label for="github-sync-interval">Sync Interval</label>
+              <div class="input-group">
+                <input class="form-control" id="github-sync-interval" type="number" aria-describedby="github-sync-interval" aria-label="5" placeholder="5" min="5" />
+                <div class="input-group-append">
+                  <span class="input-group-text" id="github-sync-interval">seconds</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="shadow-sm mb-3 p-3 bg-white rounded">
+              <div class="form-check">
+                <input class="form-check-input" id="launch-at-login-checkbox" type="checkbox" />
+                <label class="form-check-label" for="launch-at-login-checkbox">Launch at Login?</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+      let $ = require('jquery')
+      require('popper.js')
+      require('bootstrap')
+      require('./preferences')
+    </script>
+  </body>
+</html>

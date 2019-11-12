@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Notifications</title>
+
+    <!-- Stylesheets -->
+    <link href="../assets/css/fonts.css" rel="stylesheet" />
+    <link href="../../node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" />
+    <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/css/main.css" rel="stylesheet" />
+  </head>
+  <body class="notifications">
+    <div class="wrapper">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="header shadow-sm mb-3 p-3 bg-white rounded">
+              <img class="img-fluid d-block mx-auto" src="../assets/images/logo.png" alt="Logo" />
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="shadow-sm mb-3 p-3 bg-white rounded">
+              <h4 class="mb-3">Notify When Price will Be:</h4>
+
+              <form id="notificationForm">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <label class="input-group-text" for="newType">Type</label>
+                  </div>
+                  <select class="custom-select" id="newType">
+                    <option value=">=" selected>Greather than or equals</option>
+                    <option value="<=">Less than or equals</option>
+                  </select>
+
+                  <div class="input-group-prepend">
+                    <label class="input-group-text" for="newRate">rate</label>
+                  </div>
+                  <input class="form-control" id="newRate" type="text" aria-describedby="rate" aria-label="rate" placeholder="Loading..." />
+
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-inverse-sirius" type="button" onclick="addRow()">
+                      Add
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="shadow-sm p-3 bg-white rounded">
+              <table class="table table-bordered table-striped table-hover mb-0" id="dataTable">
+                <caption class="mt-3">
+                  List of notifications
+                </caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Type</th>
+                    <th scope="col">Rate</th>
+                    <th scope="col">Actions</th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+      let $ = require('jquery')
+      require('popper.js')
+      require('bootstrap')
+      require('./notifications')
+    </script>
+    <script>
+      function editRow(no) {
+        document.getElementById('editButton' + no).classList.add('d-none')
+        document.getElementById('saveButton' + no).classList.remove('d-none')
+
+        var type = document.getElementById('typeRow' + no)
+        var rate = document.getElementById('rateRow' + no)
+
+        var typeData = type.innerHTML
+        var rateData = rate.innerHTML
+
+        type.innerHTML =
+          "<select class='custom-select' id='typeText" +
+          no +
+          "'><option value='" +
+          typeData +
+          "' selected>" +
+          typeData +
+          "</option><option value='>='>Greather than or equals</option><option value='<='>Less than or equals</option></select>"
+        rate.innerHTML = "<input type='text' class='form-control' id='rateText" + no + "' placeholder='0.00001' value='" + rateData + "'>"
+      }
+
+      function saveRow(no) {
+        var typeVal = document.getElementById('typeText' + no).value
+        var rateVal = document.getElementById('rateText' + no).value
+
+        document.getElementById('typeRow' + no).innerHTML = typeVal
+        document.getElementById('rateRow' + no).innerHTML = rateVal
+
+        document.getElementById('editButton' + no).classList.remove('d-none')
+        document.getElementById('saveButton' + no).classList.add('d-none')
+      }
+
+      function deleteRow(no) {
+        document.getElementById('row' + no + '').outerHTML = ''
+      }
+
+      function addRow() {
+        var newType = document.getElementById('newType').value
+        var newRate = document.getElementById('newRate').value
+
+        var table = document.getElementById('dataTable')
+        var tableLen = table.rows.length
+        var row = (table.insertRow(tableLen).outerHTML =
+          "<tr id='row" +
+          tableLen +
+          "'><td id='typeRow" +
+          tableLen +
+          "'>" +
+          newType +
+          "</td><td id='rateRow" +
+          tableLen +
+          "'>" +
+          newRate +
+          "</td><td><div class='btn-group d-flex' role='group' aria-label='Actions'><button type='button' class='btn btn-outline-inverse-sirius w-100' id='editButton" +
+          tableLen +
+          "' onclick='editRow(" +
+          tableLen +
+          ")'>Edit</button><button type='button' class='btn btn-outline-inverse-sirius w-100 d-none' id='saveButton" +
+          tableLen +
+          "' onclick='saveRow(" +
+          tableLen +
+          ")'>Save</button><button type='button' class='btn btn-outline-inverse-sirius w-100' onclick='deleteRow(" +
+          tableLen +
+          ")'>Delete</button></div></td></tr>")
+
+        document.getElementById('newType').value.reset()
+        document.getElementById('newRate').value.reset()
+      }
+    </script>
+  </body>
+</html>
