@@ -2,7 +2,7 @@
   "private": true,
   "name": "siriustracker",
   "productName": "SiriusTracker",
-  "version": "0.0.1-beta.0",
+  "version": "0.0.1-beta.1",
   "description": "SiriusTracker is a app for track Sirius market information.",
   "main": "./src/app.js",
   "license": "MIT",
