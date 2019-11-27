@@ -135,7 +135,7 @@
     "@commitlint/config-conventional": "8.2.0",
     "cz-conventional-changelog": "3.0.2",
     "electron": "7.1.2",
-    "electron-builder": "22.1.0",
+    "electron-builder": "22.2.0",
     "electron-debug": "3.0.1",
     "eslint": "6.7.1",
     "eslint-config-prettier": "6.7.0",
