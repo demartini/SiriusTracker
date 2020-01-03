@@ -44,8 +44,8 @@
     "test": "yarn lint-html && yarn lint-css && yarn lint-js"
   },
   "devDependencies": {
-    "@commitlint/cli": "8.3.3",
-    "@commitlint/config-conventional": "8.3.3",
+    "@commitlint/cli": "8.3.4",
+    "@commitlint/config-conventional": "8.3.4",
     "cz-conventional-changelog": "3.0.2",
     "electron": "7.1.7",
     "electron-builder": "22.2.0",
