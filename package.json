@@ -69,7 +69,7 @@
     "electron-is-dev": "1.2.0",
     "electron-log": "4.2.4",
     "electron-store": "5.2.0",
-    "electron-updater": "4.3.4",
+    "electron-updater": "4.3.5",
     "jquery": "3.5.1",
     "menubar": "8.0.2",
     "numeral": "2.0.6",
