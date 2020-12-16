@@ -1,4 +1,4 @@
-setInterval(function() {
+setInterval(function () {
   fetch(
     'https://api.coingecko.com/api/v3/simple/price?ids=sirius&vs_currencies=btc'
   )
