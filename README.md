@@ -1,34 +1,36 @@
 <div align="center">
-<img src="./build/icon.ico" alt="SiriusTracker" width="128">
+  <br>
+  <img src="./build/icon.ico" alt="Logo" width="200">
+  <br><br>
 
-# SiriusTracker
+  <h1>SiriusTracker</h1>
 
-[![Build Status](https://img.shields.io/endpoint?url=https%3A%2F%2Factions-badge.atrox.dev%2Fdemartini%2FSiriusTracker%2Fbadge&style=flat-square)](https://actions-badge.atrox.dev/demartini/SiriusTracker/goto)
-[![Quality Gate Status](https://img.shields.io/sonar/quality_gate/SiriusTracker?server=https%3A%2F%2Fsonarcloud.io&style=flat-square)](https://sonarcloud.io/dashboard?id=SiriusTracker)
-[![GitHub All Releases](https://img.shields.io/github/downloads/demartini/SiriusTracker/total?style=flat-square)](https://github.com/demartini/SiriusTracker/releases)
-[![David](https://img.shields.io/david/demartini/SiriusTracker?style=flat-square)](https://github.com/demartini/SiriusTracker/blob/master/package.json)
-[![David](https://img.shields.io/david/dev/demartini/SiriusTracker?style=flat-square)](https://github.com/demartini/SiriusTracker/blob/master/package.json)
-[![GitHub issues](https://img.shields.io/github/issues/demartini/SiriusTracker?style=flat-square)](https://github.com/demartini/SiriusTracker/issues)
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/demartini/SiriusTracker?style=flat-square)](https://github.com/demartini/SiriusTracker/pulls)
-[![GitHub release (latest SemVer including pre-releases)](https://img.shields.io/github/v/release/demartini/SiriusTracker?include_prereleases&style=flat-square)](https://github.com/demartini/SiriusTracker/releases)
-[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow?style=flat-square)](https://conventionalcommits.org)
-[![GitHub](https://img.shields.io/github/license/demartini/SiriusTracker?style=flat-square)](./LICENSE)
+  [![actions badge][]][actions] [![sonarcloud badge][]][sonarcloud] [![downloads badge][]][releases] [![releases badge][]][releases] [![license badge][]][license]
+</div>
 
-**SiriusTracker** is an open source app for track [Sirius](https://getsirius.io) market information.
+**Table of Contents**
+- [Basic Overview](#basic-overview)
+- [Features](#features)
+- [Downloads](#downloads)
+- [Data](#data)
+- [Contributing](#contributing)
+- [Changelog](#changelog)
+- [License](#license)
+
+## Basic Overview
+**SiriusTracker** is an open source app for track [Sirius][] market information.
 
 The app displays Sirius market information in Bitcoin (BTC) and United States Dollar (USD).
 
-![Screenshot](.github/assets/preview.png)
+<div align="center">
 
-|                 Preferences                  |                 Notifications                  |
-| :------------------------------------------: | :--------------------------------------------: |
-| ![Screenshot](.github/assets/preferences.png) | ![Screenshot](.github/assets/notifications.png) |
+![preview][]
+
+|   Preferences    |   Notifications    |
+| :--------------: | :----------------: |
+| ![preferences][] | ![notifications][] |
 
 </div>
-
-## Installation
-
-Download released binaries(macOS/Windows/Linux) [here](https://github.com/demartini/SiriusTracker/releases).
 
 ## Features
 
@@ -37,12 +39,41 @@ Download released binaries(macOS/Windows/Linux) [here](https://github.com/demart
 - Clean design
 - Completely free
 
+## Downloads
+
+You can download SiriusTracker for Windows, macOS and Linux on [releases][] page.
+
+## Data
+
+The data is provided by [CoinGecko][].
+
 ## Contributing
 
-See our [contribution guidelines](./CONTRIBUTING.md) and our [development guide](./DEVELOPMENT.md).
+If you are interested in helping contribute, please take a look at our [contribution guidelines][] and [development guide][].
+
+## Changelog
+
+See [CHANGELOG][] for a human-readable history of changes.
 
 ## License
 
-SiriusTracker is released under the **[MIT license](./LICENSE)**
+Distributed under the MIT License. See [LICENSE][] for more information.
 
-Data provided by [CoinGecko](https://www.coingecko.com).
+[actions badge]: https://img.shields.io/github/workflow/status/demartini/SiriusTracker/Build?colorA=252525&colorB=53AF47&logo=github%20actions&logoColor=ffffff&style=for-the-badge
+[actions]: https://github.com/demartini/SiriusTracker/actions?query=workflow%3ABuild
+[changelog]: CHANGELOG.md
+[CoinGecko]: https://www.coingecko.com
+[contribution guidelines]: CONTRIBUTING.md
+[development guide]: DEVELOPMENT.md
+[downloads badge]: https://img.shields.io/github/downloads/demartini/SiriusTracker/total?colorA=252525&colorB=53AF47&style=for-the-badge
+[license badge]: https://img.shields.io/github/license/demartini/SiriusTracker?colorA=252525&colorB=53AF47&style=for-the-badge
+[license]: LICENSE
+[license]: LICENSE
+[notifications]: .github/assets/notifications.png
+[preferences]: .github/assets/preferences.png
+[preview]: .github/assets/preview.png
+[releases badge]: https://img.shields.io/github/v/release/demartini/SiriusTracker?include_prereleases&colorA=252525&colorB=53AF47&style=for-the-badge
+[releases]: https://github.com/demartini/SiriusTracker/releases
+[sirius]: https://getsirius.io
+[sonarcloud badge]: https://img.shields.io/sonar/quality_gate/SiriusTracker?server=https%3A%2F%2Fsonarcloud.io&colorA=252525&colorB=53AF47&logo=sonarcloud&logoColor=ffffff&style=for-the-badge
+[sonarcloud]: https://sonarcloud.io/dashboard?id=SiriusTracker
