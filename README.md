@@ -18,11 +18,11 @@
 
 The app displays Sirius market information in Bitcoin (BTC) and United States Dollar (USD).
 
-![Screenshot](./screenshots/preview.png)
+![Screenshot](.github/assets/preview.png)
 
 |                 Preferences                  |                 Notifications                  |
 | :------------------------------------------: | :--------------------------------------------: |
-| ![Screenshot](./screenshots/preferences.png) | ![Screenshot](./screenshots/notifications.png) |
+| ![Screenshot](.github/assets/preferences.png) | ![Screenshot](.github/assets/notifications.png) |
 
 </div>
 
