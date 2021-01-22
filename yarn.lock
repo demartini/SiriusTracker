@@ -3552,10 +3552,10 @@ mdast-util-to-string@^2.0.0:
   resolved "https://registry.yarnpkg.com/mdast-util-to-string/-/mdast-util-to-string-2.0.0.tgz#b8cfe6a713e1091cb5b728fc48885a4767f8b97b"
   integrity sha512-AW4DRS3QbBayY/jJmD8437V1Gombjf8RSOUCMFBuo5iHi58AGEgVCKQ+ezHkZZDpAQS75hcBMpLqjpJTjtUL7w==
 
-menubar@9.0.1:
-  version "9.0.1"
-  resolved "https://registry.yarnpkg.com/menubar/-/menubar-9.0.1.tgz#49d8d73ee0b515d6621d644fa96647e3dfc8ac3c"
-  integrity sha512-r4NdeG3CDb9BQ0w8WffWw2JT+Pugn22hKCb4niNuXMzK3WphY+RX2WmTPlZdIZfpNxVNKAo/mbuGfVP6LGGeJw==
+menubar@9.0.2:
+  version "9.0.2"
+  resolved "https://registry.yarnpkg.com/menubar/-/menubar-9.0.2.tgz#d0850105c59ede14ee6150561a0147fd4be6f74f"
+  integrity sha512-/AN0h1z82qc9d0LYOI5lRnUSm/TAZPOQrjdR3LREbYs63BZcxUDbzi9h0iwckovDY6nJDdmjL0WRo6SeyyMT5A==
   dependencies:
     electron-positioner "^4.1.0"
 
