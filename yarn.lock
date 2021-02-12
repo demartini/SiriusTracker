@@ -1785,10 +1785,10 @@ electron-publish@22.9.1:
     lazy-val "^1.0.4"
     mime "^2.4.6"
 
-electron-store@7.0.0:
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/electron-store/-/electron-store-7.0.0.tgz#34fee526dc4ca03933e6321667e63d9d27e874e1"
-  integrity sha512-ktoziul0TNETBxjZ1QLCPT9OGIQfDNb1AgvY29sqzca9c6H/ccV2NV+2d9epdlfo6dNZYI16BlHDVtFp9t3rvw==
+electron-store@7.0.2:
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/electron-store/-/electron-store-7.0.2.tgz#e45a54d092ea43e2a953619ed4473893d448dfdf"
+  integrity sha512-tSUeHF9qdiPirph8JKJvIIcdVb3wYwgHUJCE38SJq4L08Op2z1+u8DSQ42Nvx34TKvb2lkQkByV0tHh6xBxdEQ==
   dependencies:
     conf "^9.0.0"
     type-fest "^0.20.2"
