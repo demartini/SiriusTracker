@@ -1784,10 +1784,10 @@ electron-publish@22.9.1:
     lazy-val "^1.0.4"
     mime "^2.4.6"
 
-electron-store@7.0.0:
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/electron-store/-/electron-store-7.0.0.tgz#34fee526dc4ca03933e6321667e63d9d27e874e1"
-  integrity sha512-ktoziul0TNETBxjZ1QLCPT9OGIQfDNb1AgvY29sqzca9c6H/ccV2NV+2d9epdlfo6dNZYI16BlHDVtFp9t3rvw==
+electron-store@7.0.3:
+  version "7.0.3"
+  resolved "https://registry.yarnpkg.com/electron-store/-/electron-store-7.0.3.tgz#56d78284454018ed50ffc7645da49f828ae5ff19"
+  integrity sha512-wIbw4GHt4djs4dVrlRLCD/SpdpDUiRsQc212jagGA6zJ8xt1iwx3KZIzXY8gmwvgVCOcVxi3iyCXZoBBWwBXpQ==
   dependencies:
     conf "^9.0.0"
     type-fest "^0.20.2"
@@ -2178,7 +2178,7 @@ figures@^3.1.0, figures@^3.2.0:
   dependencies:
     escape-string-regexp "^1.0.5"
 
-file-entry-cache@^6.0.0, file-entry-cache@^6.0.1:
+file-entry-cache@^6.0.1:
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/file-entry-cache/-/file-entry-cache-6.0.1.tgz#211b2dd9659cb0394b073e7323ac3c933d522027"
   integrity sha512-7Gps/XWymbLk2QLYK4NzpMOrYjMhdIxXuIvy2QBsLE6ljuodKvdkWs/cpyJJ3CVIVpH0Oi1Hvg1ovbMzLdFBBg==
