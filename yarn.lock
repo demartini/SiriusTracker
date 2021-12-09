@@ -2178,7 +2178,7 @@ figures@^3.1.0, figures@^3.2.0:
   dependencies:
     escape-string-regexp "^1.0.5"
 
-file-entry-cache@^6.0.0, file-entry-cache@^6.0.1:
+file-entry-cache@^6.0.1:
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/file-entry-cache/-/file-entry-cache-6.0.1.tgz#211b2dd9659cb0394b073e7323ac3c933d522027"
   integrity sha512-7Gps/XWymbLk2QLYK4NzpMOrYjMhdIxXuIvy2QBsLE6ljuodKvdkWs/cpyJJ3CVIVpH0Oi1Hvg1ovbMzLdFBBg==
@@ -3565,10 +3565,10 @@ mdast-util-to-string@^2.0.0:
   resolved "https://registry.yarnpkg.com/mdast-util-to-string/-/mdast-util-to-string-2.0.0.tgz#b8cfe6a713e1091cb5b728fc48885a4767f8b97b"
   integrity sha512-AW4DRS3QbBayY/jJmD8437V1Gombjf8RSOUCMFBuo5iHi58AGEgVCKQ+ezHkZZDpAQS75hcBMpLqjpJTjtUL7w==
 
-menubar@9.0.2:
-  version "9.0.2"
-  resolved "https://registry.yarnpkg.com/menubar/-/menubar-9.0.2.tgz#d0850105c59ede14ee6150561a0147fd4be6f74f"
-  integrity sha512-/AN0h1z82qc9d0LYOI5lRnUSm/TAZPOQrjdR3LREbYs63BZcxUDbzi9h0iwckovDY6nJDdmjL0WRo6SeyyMT5A==
+menubar@9.1.1:
+  version "9.1.1"
+  resolved "https://registry.yarnpkg.com/menubar/-/menubar-9.1.1.tgz#0ab278fc15d9e225714bd1f74038fa1b6650fdcc"
+  integrity sha512-nh/Gj1o90389RqtAjzJmFUnXxcN008fFoXXSILXTFszED64BIMpC3ZYYl6hIfNiLoKFBph2bwqHpW+BO0y//fQ==
   dependencies:
     electron-positioner "^4.1.0"
 
