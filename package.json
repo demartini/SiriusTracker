@@ -71,7 +71,7 @@
     "electron-store": "7.0.0",
     "electron-updater": "4.3.5",
     "jquery": "3.5.1",
-    "menubar": "9.0.2",
+    "menubar": "9.1.2",
     "numeral": "2.0.6",
     "popper.js": "1.16.1"
   },
